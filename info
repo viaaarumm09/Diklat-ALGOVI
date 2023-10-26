@@ -1,0 +1,77 @@
+netcdf 1 {
+dimensions:
+	time = 1 ;
+	depth = 1 ;
+	lat = 38 ;
+	lon = 24 ;
+variables:
+	short water_u(time, depth, lat, lon) ;
+		water_u:long_name = "Eastward Water Velocity" ;
+		water_u:standard_name = "eastward_sea_water_velocity" ;
+		water_u:units = "m/s" ;
+		water_u:_FillValue = -30000s ;
+		water_u:missing_value = -30000s ;
+		water_u:scale_factor = 0.00100000f ;
+		water_u:add_offset = 0.000000f ;
+		water_u:NAVO_code = 17 ;
+		water_u:coordinates = "time depth lat lon" ;
+	double time(time) ;
+		time:long_name = "Valid Time" ;
+		time:units = "hours since 2000-01-01 00:00:00" ;
+		time:time_origin = "2000-01-01 00:00:00" ;
+		time:calendar = "gregorian" ;
+		time:axis = "T" ;
+		time:NAVO_code = 13 ;
+		time:_CoordinateAxisType = "Time" ;
+	double depth(depth) ;
+		depth:long_name = "Depth" ;
+		depth:standard_name = "depth" ;
+		depth:units = "m" ;
+		depth:positive = "down" ;
+		depth:axis = "Z" ;
+		depth:NAVO_code = 5 ;
+		depth:_CoordinateAxisType = "Height" ;
+		depth:_CoordinateZisPositive = "down" ;
+	double lat(lat) ;
+		lat:long_name = "Latitude" ;
+		lat:standard_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "even" ;
+		lat:axis = "Y" ;
+		lat:NAVO_code = 1 ;
+		lat:_CoordinateAxisType = "Lat" ;
+	double lon(lon) ;
+		lon:long_name = "Longitude" ;
+		lon:standard_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:modulo = "360 degrees" ;
+		lon:axis = "X" ;
+		lon:NAVO_code = 2 ;
+		lon:_CoordinateAxisType = "Lon" ;
+	short water_v(time, depth, lat, lon) ;
+		water_v:long_name = "Northward Water Velocity" ;
+		water_v:standard_name = "northward_sea_water_velocity" ;
+		water_v:units = "m/s" ;
+		water_v:_FillValue = -30000s ;
+		water_v:missing_value = -30000s ;
+		water_v:scale_factor = 0.00100000f ;
+		water_v:add_offset = 0.000000f ;
+		water_v:NAVO_code = 18 ;
+		water_v:coordinates = "time depth lat lon" ;
+
+// global attributes:
+		:classification_level = "UNCLASSIFIED"
+		:distribution_statement = "Approved for public release. Distribution unlimited."
+		:downgrade_date = "not applicable"
+		:classification_authority = "not applicable"
+		:institution = "Fleet Numerical Meteorology and Oceanography Center"
+		:source = "HYCOM archive file"
+		:history = "archv2ncdf3z"
+		:field_type = "instantaneous"
+		:Conventions = "CF-1.6 NAVO_netcdf_v1.1"
+		:History = "Translated to CF-1.0 Conventions by Netcdf-Java CDM (CFGridWriter2)"
+		:geospatial_lat_min = 0.360000 ;
+		:geospatial_lat_max = 1.84000 ;
+		:geospatial_lon_min = 96.1600 ;
+		:geospatial_lon_max = 98.0000 ;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<View xview="0.16" collection="1">
+<NetcdfEmulation primaryVarID="2">
+<Dimension varID="1" index="0"/>
+<Dimension isLeadDim="1" varID="2" index="1"/>
+<Dimension varID="3" index="2"/>
+<Dimension varID="4" index="3"/>
+<MetaVariable colID="4" trgVID="3" index="3"/>
+<MetaVariable colID="3" trgVID="4" index="4"/>
+<MetaVariable colID="1" trgVID="5" index="5" cnvType="32"/>
+<MetaVariable colID="1" trgVID="6" index="6" cnvType="32"/>
+<MetaVariable colID="1" trgVID="7" index="7" cnvType="32"/>
+<MetaVariable colID="1" trgVID="8" index="8" cnvType="32"/>
+<MetaVariable colID="1" trgVID="9" index="9" cnvType="32"/>
+<MetaVariable colID="1" trgVID="10" index="10" cnvType="32"/>
+<MetaVariables>
+<digits_counts>0,0,0,3,3,0,0,0,0,0,0</digits_counts>
+</MetaVariables>
+<Variables>
+<digits_counts>2,2,2,2,2,2</digits_counts>
+</Variables>
+</NetcdfEmulation>
+<GeographicMap>
+<MapDomain lon_max="98" lat_max="1.84" lon_min="96.16" lat_min="0.36"/>
+<AutoMapLayerSettings coastline_fill="F"/>
+</GeographicMap>
+<MapWindow>
+<Symbol size="1.2" small_size="0.4" type="0" color="1"/>
+<Window>
+<Geometry x_offset_bb="1.5" x_right="98" y_offset_bb="1" y_length_bb="7.5" y_top="1.84" x_length_bb="8.5" x_projection="100" y_projection="100" y_bottom="0.36" x_left="96.16"/>
+</Window>
+</MapWindow>
+<DataWindow>
+<AxisVariables>
+<!--Eastward Water Velocity [m/s]-->
+<xAxis var_list="1" var_id="1" is_reversed="F"/>
+<!--Depth [m]-->
+<yAxis var_list="1" var_id="0" is_reversed="T"/>
+</AxisVariables>
+<Modes plot_mode="0" window_mode="0" window_type="0"/>
+<Window>
+<Geometry x_offset_bb="14.5" x_right="1e+10" y_offset_bb="2.5" y_length_bb="17" y_top="1e+10" x_length_bb="14" y_bottom="-1e+10" x_left="-1e+10"/>
+</Window>
+</DataWindow>
+<DataWindow>
+<AxisVariables>
+<!--Northward Water Velocity [m/s]-->
+<xAxis var_list="1" var_id="2" is_reversed="F"/>
+<!--Depth [m]-->
+<yAxis var_list="1" var_id="0" is_reversed="T"/>
+</AxisVariables>
+<Modes plot_mode="0" window_mode="0" window_type="0"/>
+<Window>
+<Geometry x_offset_bb="2.5" x_right="1e+10" y_offset_bb="10.5" y_length_bb="9" y_top="1e+10" x_length_bb="7.5" y_bottom="-1e+10" x_left="-1e+10"/>
+</Window>
+</DataWindow>
+<IsoSurfaceVariables>
+<!--Eastward Water Velocity [m/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="1" surface_value="first"/>
+<!--Northward Water Velocity [m/s] @ Depth [m]=first-->
+<IsoVariable surface_var_id="0" var_id="2" surface_value="first"/>
+</IsoSurfaceVariables>
+<CurrentSelection stationID="25" sampleID="0"/>
+</View>
