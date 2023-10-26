@@ -1,0 +1,11 @@
+Diklat 2 - Sabtu, 16 September 2023
+
+Alur kerja program python
+1. Sintaks > Statements, variabels, comments, reseverd word, literals, operators, whitespace. 
+-statement > kalimat perintah yang akan dieksekusi oleh kompoter > tidak diakhiri titik koma, jika lebih satu barus dipisah dengan titik koma
+-Variabels > lokasi memori yang dicadangkan untuk menyimpan nialai > berupa huruf atau garis, diikuti huruf garus bawah atau angka dan sensitif
+-Literals > penulisan angka sistematis > string('  ''), numeric, boolean (data benar atau salah), collection, special
+-Operators > merubah nilai suatu variable yang merujuk pada simbol > aritmetika, comparison, identify, membership, 
+-Kondisional > kemungkinan
+-Looping > instruksi program berulang
+-Fungsi > 
